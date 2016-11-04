@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>User account management</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  <head>
+  <body>
+    <script src="js/angular-1.5.0.js"></script>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-brand">User account manager</div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="login.html">Login here</a></li>
+        </div>
+      </ul><!--end container-->
+    </nav>
+    <div class="container">
+      <table id="create-window">
+        <tr>
+          <th colspan="2" id="text">Register</th>
+        </tr>
+        <tr>
+          <td><p>Username</p></td>
+          <td><input type="text" id="username"><p class="text-danger">Invalid username</p></td>
+        </tr>
+        <tr>
+          <td><p>Email</p></td>
+          <td><input type="text" id="email"><p class="text-danger">Invalid username</p></td>
+        </tr>
+        <tr>
+          <td><p>Password</p></td>
+          <td><input type="password" id="password"><p class="text-danger">Invalid username</p></td>
+        </tr>
+        <tr>
+          <td><p>Country</p></td>
+          <td><input type="text" id="country"><p class="text-danger">Invalid username</p></td>
+        </tr>
+        <tr>
+          <td><p>City</p></td>
+          <td><input type="text" id="city"><p class="text-danger">Invalid username</p></td>
+        </tr>
+        <tr>
+          <td><p>Postal Code</p></td>
+          <td><input type="text" id="postal"><p class="text-danger">Invalid username</p></td>
+        </tr>
+        <tr>
+          <td colspan="2"><p id="avatarText">Choose your beard :P</p></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div id="avatar-wrapper">
+              <img src="images/avatar1.jpg" alt="avatar" />
+              <img src="images/avatar2.jpg" alt="avatar" />
+              <img src="images/avatar3.jpg" alt="avatar" />
+              <img src="images/avatar4.jpg" alt="avatar" />
+              <img src="images/avatar5.jpg" alt="avatar" />
+              <img src="images/avatar6.jpg" alt="avatar" />
+            </div>
+          </td>
+        </tr>
+      </table>
+      <a href="login.html" class="btn btn-info" role="button" id="submit-button">Submit</a>
+    </div>
+
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+
+</html>

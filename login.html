@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>User account management</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  <head>
+  <body>
+    <script src="js/angular-1.5.0.js"></script>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-brand">User account manager</div>
+      </div><!--end container-->
+    </nav>
+    <section>
+      <div id="login-window">
+        <h2>Login</h2>
+
+        <div class="form-div">
+          <p class="input-label">Name:</p>
+          <input type="text" placeholder="Enter your name" class="input-field" id="login-user">
+        </div>
+        <div class="form-div">
+          <p class="input-label">Password:</p>
+          <input type="password" placeholder="Enter your password" class="input-field" id="login-password">
+          <p class="text-danger bg-danger" id="warning">Invalid Name or Password</p>
+        </div>
+        <a href="profile.html" role="button" id="login-button" class="btn btn-success">Login</a>
+        <a href="create.html" id="create-acc">Create account</a>
+      </div>
+    </section>
+
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+
+</html>

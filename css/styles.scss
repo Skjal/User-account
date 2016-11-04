@@ -1,0 +1,199 @@
+$orange: #cca300;
+$green: #5CB85C;
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin fontSize($size) {
+  font-size: $size;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: #8c8c8c;
+}
+
+#bg-reset {
+  background-color: #fff;
+}
+
+section {
+  width: 100%;
+  position: relative;
+
+  #login-window {
+    @include size(400px, 550px);
+    background-color: #cca300;
+    border-radius: 10px;
+    margin: auto;
+    overflow: inherit;
+    box-shadow: 0px 0px 30px #000;
+
+    h2 {
+      padding-top: 50px;
+      text-align: center;
+      color: black;
+    }
+
+    .form-div {
+      margin-top: 30px;
+
+      .input-label {
+        @include fontSize(20px);
+        font-weight: bold;
+        margin-left: 20px;
+      }
+
+      .input-field {
+        @include size(90%, 50px);
+        @include fontSize(20px);
+        display: block;
+        margin: auto;
+
+        &:focus {
+          box-shadow: 0px 0px 10px #666;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  #login-button {
+    @include size(250px, 50px);
+    @include fontSize(20px);
+    display: block;
+    margin: 90px auto 0;
+    line-height: 36px;
+  }
+
+  #create-acc {
+    width: 30%;
+    text-align: center;
+    display: block;
+    margin: 10px auto 0;
+  }
+
+  #warning {
+    margin: 10px auto 0;
+    padding: 10px 5px;
+    width: 90%;
+    text-align: center;
+    opacity: 0;
+  }
+}
+
+table {
+  width: 400px;
+  margin: auto;
+  display: block;
+  background-color: $green;
+  border-radius: 10px;
+
+  th {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  td {
+    width: 200px;
+    padding: 10px;
+    align: center;
+
+    #avatar-wrapper {
+      display: block;
+      margin: auto;
+      width: 320px;
+
+      img {
+        @include size(48px, 48px);
+        display: inline-block;
+        margin: auto;
+        border: solid 2px transparent;
+
+        &:not(:last-child) {
+          margin-right: 2px;
+        }
+
+        &:hover {
+          border: solid 2px $orange;
+        }
+      }
+    }
+
+    p {
+      @include fontSize(20px);
+      text-align: right;
+    }
+
+    .text-danger {
+      display: none;
+    }
+
+    input {
+      @include size(100%,43px);
+
+      &:focus {
+        background-color: lighten(#666, 50%);
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}
+
+#submit-button {
+  @include size(200px,50px);
+  @include fontSize(20px);
+  line-height: 36px;
+  display: block;
+  margin: 30px auto 0;
+}
+
+.list {
+  width: 100%;
+  @include fontSize(25px);
+  font-weight: lighter;
+  margin-top: 40px;
+
+  .list-val {
+    @include fontSize(16px);
+    border-top: 3px solid #666;
+    border-radius: 3px;
+    padding: 10px 0 0 10px;
+
+    input{
+      width: 250px;
+    }
+  }
+}
+
+#avatarText {
+  text-align: center;
+  margin-bottom: 0px;
+  padding-top: 20px;
+}
+
+#avatarImage {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  width: 85px;
+
+  @media screen and (max-width: 768px) {
+    top: 0;
+    right: 50px;
+    width: 48px;
+  }
+}
+
+#save-button {
+  @extend #submit-button;
+}

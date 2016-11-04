@@ -1,0 +1,139 @@
+html {
+  min-height: 100%; }
+
+body {
+  min-height: 100%;
+  background-color: #8c8c8c; }
+
+#bg-reset {
+  background-color: #fff; }
+
+section {
+  width: 100%;
+  position: relative; }
+  section #login-window {
+    width: 400px;
+    height: 550px;
+    background-color: #cca300;
+    border-radius: 10px;
+    margin: auto;
+    overflow: inherit;
+    box-shadow: 0px 0px 30px #000; }
+    section #login-window h2 {
+      padding-top: 50px;
+      text-align: center;
+      color: black; }
+    section #login-window .form-div {
+      margin-top: 30px; }
+      section #login-window .form-div .input-label {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 20px; }
+      section #login-window .form-div .input-field {
+        width: 90%;
+        height: 50px;
+        font-size: 20px;
+        display: block;
+        margin: auto; }
+        section #login-window .form-div .input-field:focus {
+          box-shadow: 0px 0px 10px #666;
+          outline: none; }
+  section #login-button {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    display: block;
+    margin: 90px auto 0;
+    line-height: 36px; }
+  section #create-acc {
+    width: 30%;
+    text-align: center;
+    display: block;
+    margin: 10px auto 0; }
+  section #warning {
+    margin: 10px auto 0;
+    padding: 10px 5px;
+    width: 90%;
+    text-align: center;
+    opacity: 0; }
+
+table {
+  width: 400px;
+  margin: auto;
+  display: block;
+  background-color: #5CB85C;
+  border-radius: 10px; }
+  table th {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 0; }
+  table td {
+    width: 200px;
+    padding: 10px;
+    align: center; }
+    table td #avatar-wrapper {
+      display: block;
+      margin: auto;
+      width: 320px; }
+      table td #avatar-wrapper img {
+        width: 48px;
+        height: 48px;
+        display: inline-block;
+        margin: auto;
+        border: solid 2px transparent; }
+        table td #avatar-wrapper img:not(:last-child) {
+          margin-right: 2px; }
+        table td #avatar-wrapper img:hover {
+          border: solid 2px #cca300; }
+    table td p {
+      font-size: 20px;
+      text-align: right; }
+    table td .text-danger {
+      display: none; }
+    table td input {
+      width: 100%;
+      height: 43px; }
+      table td input:focus {
+        background-color: #e6e6e6;
+        border: none;
+        outline: none; }
+
+#submit-button, #save-button {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 36px;
+  display: block;
+  margin: 30px auto 0; }
+
+.list {
+  width: 100%;
+  font-size: 25px;
+  font-weight: lighter;
+  margin-top: 40px; }
+  .list .list-val {
+    font-size: 16px;
+    border-top: 3px solid #666;
+    border-radius: 3px;
+    padding: 10px 0 0 10px; }
+    .list .list-val input {
+      width: 250px; }
+
+#avatarText {
+  text-align: center;
+  margin-bottom: 0px;
+  padding-top: 20px; }
+
+#avatarImage {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  width: 85px; }
+  @media screen and (max-width: 768px) {
+    #avatarImage {
+      top: 0;
+      right: 50px;
+      width: 48px; } }
+
+/*# sourceMappingURL=styles.css.map */
